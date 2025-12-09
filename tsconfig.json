@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./client/src/*"]
+    },
+    "types": ["node", "vite/client"],
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tsbuildinfo"
+  },
+  "include": ["client/src/**/*"],
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts"]
+}
